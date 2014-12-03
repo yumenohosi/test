@@ -70,6 +70,7 @@ _ _ _
 
 ### response
 * status Codes
+
 | code | 이름 | 내용 |
 |------|------|------|
 |200|ok| 성공 |
@@ -104,6 +105,7 @@ Query는 GET 호출이므로 모든 속성은 urlencode하여 호출한다.
 
 * where
 다음과 같은 옵션을 조합해 사용할 수 있다.
+
 | Key | Operation | Sample |
 |------|------| ------ |
 |$lt | Less Than| {"num" : {"$lt" : 2 } } |
@@ -160,7 +162,7 @@ _ _ _
 |Content-Type|application/json|
 
 ##### response
-==Success==
+*Success*
 
 Status: 201 Created
 createdAt, objectId가 항상 들어온다.
@@ -184,7 +186,7 @@ _ _ _
 |X-Noserv-REST-API-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 createdAt, updatedAt, objectId가 항상 들어온다. 나머지는 예제
 ```json
 {
@@ -215,7 +217,7 @@ _ _ _
 |Content-Type|application/json|
 
 ##### response
-==Success==
+*Success*
 updatedAt이 항상 들어온다.
 ```json
 {
@@ -236,7 +238,7 @@ _ _ _
 |X-Noserv-REST-API-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 항상 배열을 results로 감싸서 리턴한다.
 ```json
 {
@@ -274,7 +276,7 @@ _ _ _
 |X-Noserv-REST-API-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 리턴 데이터 없음.
 
 
@@ -311,7 +313,7 @@ _ _ _
 위의 데이터는 필수이고, 나머지 앱에서 회원관리에 필요한 데이터를 더 받아서 넣으면 됨.
 
 ##### response
-==Success==
+*Success*
 
 Status: 201 Created
 createdAt, objectId, sessionToken이 항상 들어온다.
@@ -343,7 +345,7 @@ _ _ _
 Get방식이므로 username과 password는 urlencode해서 보내야 함.
 
 ##### response
-==Success==
+*Success*
 
 createdAt, updatedAt, objectId, sessionToken이 항상 들어온다. 나머지 user데이터도 password만 빼고 보내준다.
 ```json
@@ -369,7 +371,7 @@ _ _ _
 |X-Noserv-REST-API-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 
 createdAt, updatedAt, objectId가 항상 들어온다. 나머지 user데이터도 password만 빼고 보내준다.
 ```json
@@ -398,7 +400,7 @@ _ _ _
 |X-Noserv-Session-Token|pnktnjyb996sj4p156gjtp4im|
 
 ##### response
-==Success==
+*Success*
 
 createdAt, updatedAt, objectId가 항상 들어온다. 나머지 user데이터도 password만 빼고 보내준다.
 ```json
@@ -426,7 +428,7 @@ _ _ _
 |Content-Type|application/json|
 
 ##### response
-==Success==
+*Success*
 
 updatedAt이 항상 들어온다.
 ```json
@@ -448,7 +450,7 @@ _ _ _
 |X-Noserv-REST-API-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 
 항상 배열을 results로 감싸서 리턴한다.
 ```json
@@ -486,7 +488,7 @@ _ _ _
 |X-Noserv-Session-Token|pnktnjyb996sj4p156gjtp4im|
 
 ##### response
-==Success==
+*Success*
 리턴 데이터 없음.
 
 
@@ -520,7 +522,7 @@ _ _ _
 |appname|test|
 
 ##### response
-==Success==
+*Success*
 
 Status: 201 Created
 createdAt, objectId, 각종 key token들이 생성되어 들어온다. 
@@ -549,7 +551,7 @@ _ _ _
 |X-Noserv-Session-Token|pnktnjyb996sj4p156gjtp4im|
 
 ##### response
-==Success==
+*Success*
 createdAt, updatedAt, objectId, 각종 key가 항상 들어온다. 데이터가 더 있다면 함께 들어온다.
 ```json
 {
@@ -578,7 +580,7 @@ _ _ _
 |Content-Type|application/json|
 
 ##### response
-==Success==
+*Success*
 updatedAt이 항상 들어온다.
 ```json
 {
@@ -599,7 +601,7 @@ _ _ _
 |X-Noserv-Session-Token|pnktnjyb996sj4p156gjtp4im|
 
 ##### response
-==Success==
+*Success*
 항상 배열을 results로 감싸서 리턴한다.
 ```json
 {
@@ -645,7 +647,7 @@ _ _ _
 |X-Noserv-Session-Token|pnktnjyb996sj4p156gjtp4im|
 
 ##### response
-==Success==
+*Success*
 리턴 데이터 없음.
 
 
@@ -684,7 +686,7 @@ _ _ _
 * ios의 경우 pushType이 없으며, deviceType은 ios로 한다.
 
 ##### response
-==Success==
+*Success*
 
 Status: 201 Created
 createdAt, objectId가 항상 들어온다.
@@ -708,7 +710,7 @@ _ _ _
 |X-Noserv-REST-API-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 createdAt, updatedAt, objectId가 항상 들어온다. 데이터가 더 있다면 함께 들어온다.
 ```json
 {
@@ -737,7 +739,7 @@ _ _ _
 |Content-Type|application/json|
 
 ##### response
-==Success==
+*Success*
 updatedAt이 항상 들어온다.
 ```json
 {
@@ -759,7 +761,7 @@ _ _ _
 |X-Noserv-Master-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 항상 배열을 results로 감싸서 리턴한다.
 ```json
 {
@@ -803,7 +805,7 @@ _ _ _
 |X-Noserv-Master-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 리턴 데이터 없음.
 
 
@@ -846,7 +848,7 @@ body를 다음과 같은 형태로 구현하면 channels를 포함하는 install
 다음과 같이 installation에 추가한 컬럼들을 통해 구독자를 검색할 수 있다.
 ```json
 {
-	"where": {
+  "where": {
         "scores": true,
         "gameResults": true,
         "injuryReports": true
@@ -868,7 +870,7 @@ body를 다음과 같은 형태로 구현하면 channels를 포함하는 install
 | title | Android | the value displayed in the Android system tray notification |
 
 ##### response
-==Success==
+*Success*
 
 Status: 201 Created
 createdAt, objectId가 항상 들어온다.
@@ -893,7 +895,7 @@ _ _ _
 |X-Noserv-Master-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 createdAt, updatedAt, objectId가 항상 들어온다. 데이터가 더 있다면 함께 들어온다.
 Master Key가 필요하다.
 ```json
@@ -927,7 +929,7 @@ _ _ _
 |X-Noserv-Master-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 항상 배열을 results로 감싸서 리턴한다.
 ```json
 {
@@ -990,7 +992,7 @@ _ _ _
 
 
 ##### response
-==Success==
+*Success*
 
 Status: 201 Created
 url, name이 항상 들어온다.
@@ -1015,5 +1017,5 @@ url, name이 항상 들어온다.
 |X-Noserv-Master-Key|o3ifa8izHAhhcj2cHXjUrZtWnZhJKn3QJIn6x2RF|
 
 ##### response
-==Success==
+*Success*
 리턴 데이터 없음.
